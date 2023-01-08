@@ -1,0 +1,32 @@
+.main-content {
+	margin: 40px 0;
+	display: grid;
+	gap: 50px;
+}
+
+.about-me {
+	background-color: #bfbfbf;
+	padding: 20px;
+	border-radius: 5px;
+	display: grid;
+	gap: 20px;
+	width: 100%;
+}
+
+.skills {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 30px;
+	padding: 0 30px;
+}
+.skills > div {
+	border: 1px solid black;
+	padding: 20px;
+	border-radius: 5px;
+	max-width: 150px;
+	min-width: 150px;
+}
+.skills ul {
+	margin-left: 30px;
+}

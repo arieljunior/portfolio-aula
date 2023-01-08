@@ -1,31 +1,63 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: 'Poppins', sans-serif;
+    background-color: #e6e6e6;
+}
+.container {
+	width: 60%;
+	margin: 30px auto;
 }
 
-.container{
-    width: 80%;
-    margin: 30px auto;
+.header {
+	text-align: center;
+	display: grid;
+	gap: 20px;
 }
 
-.header{
-    text-align: center;
-    display: grid;
-    gap: 20px;
+.header-title > .profile-img {
+	width: 150px;
+	text-align: center;
 }
 
-.header-title > .profile-img{
-    width: 150px;
-    text-align: center;
+.header-title > .my-name {
+	margin: 10px 0;
 }
 
-.header-title > .my-name{
-    margin: 10px 0;
+.header-menu {
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+}
+.header-menu > a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-weight: bolder;
+    padding: 5px 20px;
+    background-color: #90d5f8;
+    border-radius: 5px;
 }
 
-.header-menu{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+.header-menu > a:hover{
+    background-color: #3fb7f3;
+}
+
+.icon {
+	width: 30px;
+	height: 30px;
+}
+.info-container > h2{
+    margin-bottom: 20px;
+}
+.info-container > h2::after{
+    width: 100px;
+    height: 6px;
+    display: block;
+    content: "";
+    background: #4b6cc1;
 }
