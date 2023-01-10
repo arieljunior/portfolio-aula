@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 * {
 	margin: 0;
 	padding: 0;
 }
 body {
-	font-family: 'Poppins', sans-serif;
-    background-color: #e6e6e6;
+	font-family: "Poppins", sans-serif;
+	background-color: #e6e6e6;
 }
 .container {
-	width: 60%;
+	width: 80%;
 	margin: 30px auto;
-	    display: grid;
-    gap: 50px;
+	display: grid;
+	gap: 50px;
 }
 
 .header {
@@ -20,7 +20,9 @@ body {
 	display: grid;
 	gap: 20px;
 }
-
+.header-title{
+	display: flex;
+}
 .header-title > .profile-img {
 	width: 150px;
 	text-align: center;
@@ -36,17 +38,14 @@ body {
 	justify-content: center;
 }
 .header-menu > a {
-    text-decoration: none;
+	text-decoration: none;
     font-weight: bolder;
     color: black;
-    font-weight: bolder;
-    padding: 5px 20px;
-    background-color: #90d5f8;
-    border-radius: 5px;
+    font-size: 20px;
 }
 
-.header-menu > a:hover{
-    background-color: #3fb7f3;
+.header-menu > a:hover {
+	color: #2a6e91;
 }
 
 .icon {
@@ -54,18 +53,29 @@ body {
 	height: 30px;
 }
 
-.title-section{
-    /* margin-bottom: 40px; */
+.title-section {
+	/* margin-bottom: 40px; */
 }
-.title-section::after{
-    width: 100px;
-    height: 6px;
-    display: block;
-    content: "";
-    background: #4b6cc1;
+.title-section::after {
+	width: 100px;
+	height: 6px;
+	display: block;
+	content: "";
+	background: #4b6cc1;
 }
 
 .main-content {
 	display: grid;
 	gap: 50px;
+}
+
+.personal-info {
+	width: 100%;
+	text-align: end;
+}
+
+@media screen and (min-width: 1100px) {
+	.container{
+		width: 50%;
+	}
 }
